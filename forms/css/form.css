@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Segoe UI", Verdana, Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #222;
+	background-color: #F7F7F4;
+	margin: 0;
+	padding: 1em 0;
+}
+
+#wrapper {
+	width: 60%;
+	max-width: 40em;
+	margin-left: 4%;
+}
+
+div#formcol1 {
+	float: left;
+	width: 100%;
+}
+
+div#multchoice {
+	clear: both;
+}
+
+h1 {
+	font-size: 1.75rem;
+	color: #1F3A5F;
+	margin: 0 0 .5em;
+}
+
+.instructions {
+	margin: 0 0 1em;
+}
+
+.req-mark {
+	color: #B00020;
+	font-weight: bold;
+}
+
+fieldset {
+	border: 1px solid #8A8A8A;
+	border-radius: 4px;
+	padding: .5em 1em 1em;
+	margin: 0 0 1em;
+	background-color: #FFF;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: #1F3A5F;
+	padding: 0 .3em;
+}
+
+label {
+	margin-right: .3em;
+	width: 7em;
+	display: inline-block;
+	text-align: right;
+}
+
+#formcol1 ul {
+	margin: 0;
+	padding: 0;
+}
+
+#formcol1 li {
+	list-style: none;
+	margin: .5em 0;
+}
+
+#formcol1 input[type="text"] {
+	font: inherit;
+	width: 14em;
+	max-width: 100%;
+	padding: .2em .3em;
+	border: 1px solid #767676;
+	border-radius: 3px;
+}
+
+#multchoice label {
+	width: auto;
+	text-align: left;
+	margin: 0 1.5em 0 .3em;
+	padding: 0 .2em;
+	cursor: pointer;
+}
+
+#multchoice p {
+	margin: .3em 0;
+}
+
+#multchoice input[type="radio"] {
+	cursor: pointer;
+}
+
+.submit-button input {
+	font: inherit;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #1F3A5F;
+	border: 2px solid #1F3A5F;
+	border-radius: 4px;
+	padding: .4em 1em;
+	cursor: pointer;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #BB3D2F !important;
+}
+
+input:focus, select:focus {
+	outline: 3px solid #1F3A5F;
+	outline-offset: 2px;
+}
+
+#formcol1 input.reqfield {
+	background: #FF9;
+}
+
+@media (max-width: 40em) {
+	#wrapper {
+		width: auto;
+		margin: 0 1em;
+	}
+
+	#formcol1 label {
+		display: block;
+		width: auto;
+		text-align: left;
+	}
+
+	#formcol1 input[type="text"] {
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+
