@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: atlas3150-assignment11:latest
+    container_name: atlas3150-assignment11
+    ports:
+      - "47214:80"
+    restart: unless-stopped
